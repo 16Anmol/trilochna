@@ -61,7 +61,32 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom eco-friendly colors
+				nature: {
+					DEFAULT: 'hsl(var(--nature-green))',
+					light: 'hsl(var(--nature-green-light))',
+					dark: 'hsl(var(--nature-green-dark))'
+				},
+				sky: {
+					DEFAULT: 'hsl(var(--sky-blue))',
+					light: 'hsl(var(--sky-blue-light))'
+				},
+				health: 'hsl(var(--health-blue))'
+			},
+			backgroundImage: {
+				'gradient-nature': 'var(--gradient-nature)',
+				'gradient-sky': 'var(--gradient-sky)',
+				'gradient-hero': 'var(--gradient-hero)'
+			},
+			boxShadow: {
+				'soft': 'var(--shadow-soft)',
+				'card': 'var(--shadow-card)',
+				'glow': 'var(--shadow-glow)'
+			},
+			transitionTimingFunction: {
+				'smooth': 'var(--transition-smooth)',
+				'bounce': 'var(--transition-bounce)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
