@@ -51,34 +51,34 @@ const Activities = () => {
   ];
 
   return (
-    <section id="activities" className="py-20 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+    <section id="activities" className="py-12 bg-background">
+      <div className="container mx-auto px-3 sm:px-4 lg:px-6">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Our Activities
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Three pillars of impact: environmental conservation, healthcare accessibility, 
             and community empowerment working together for a better tomorrow.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-3 gap-6 mb-8">
           {activities.map((activity, index) => (
             <Card key={index} className="shadow-card hover:shadow-glow transition-all duration-300 hover:-translate-y-2 group">
-              <CardHeader className="text-center pb-4">
-                <div className="relative w-24 h-24 mx-auto mb-6">
+              <CardHeader className="text-center pb-3">
+                <div className="relative w-16 h-16 mx-auto mb-4">
                   <img 
                     src={activity.icon} 
                     alt={`${activity.title} icon`}
                     className="w-full h-full object-cover rounded-full shadow-soft group-hover:scale-110 transition-smooth"
                   />
                 </div>
-                <CardTitle className="text-2xl font-bold text-foreground">
+                <CardTitle className="text-xl font-bold text-foreground">
                   {activity.title}
                 </CardTitle>
               </CardHeader>
-              <CardContent className="space-y-6">
+              <CardContent className="space-y-4">
                 <p className="text-muted-foreground leading-relaxed">
                   {activity.description}
                 </p>

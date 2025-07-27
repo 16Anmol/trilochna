@@ -16,54 +16,54 @@ const Hero = () => {
       </div>
       
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+      <div className="relative z-10 container mx-auto px-3 sm:px-4 lg:px-6 text-center text-white">
+        <div className="max-w-3xl mx-auto">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
             Trilochna
           </h1>
-          <p className="text-xl md:text-2xl mb-4 font-medium">
+          <p className="text-lg md:text-xl mb-3 font-medium">
             A Community for Green & Healthy Living
           </p>
-          <p className="text-lg md:text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg mb-6 opacity-90 max-w-xl mx-auto">
             Planting Trees. Saving Lives. Empowering Youth.
           </p>
           
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button variant="nature" size="lg" className="text-lg px-8 py-4">
+          <div className="flex flex-col sm:flex-row gap-3 justify-center mb-8">
+            <Button variant="nature" className="text-base px-6 py-3">
               Join as Volunteer
-              <ArrowRight className="ml-2 h-5 w-5" />
+              <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            <Button variant="sky" size="lg" className="text-lg px-8 py-4">
+            <Button variant="sky" className="text-base px-6 py-3">
               Upcoming Events
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-4 bg-white/10 border-white/30 text-white hover:bg-white/20">
+            <Button variant="outline" className="text-base px-6 py-3 bg-white/10 border-white/30 text-white hover:bg-white/20">
               See Our Impact
             </Button>
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-2xl mx-auto">
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4">
-                <Users className="h-8 w-8 text-white" />
+              <div className="inline-flex items-center justify-center w-12 h-12 bg-white/20 rounded-full mb-3">
+                <Users className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-2">500+</h3>
-              <p className="text-sm opacity-90">Active Volunteers</p>
+              <h3 className="text-xl font-bold mb-1">500+</h3>
+              <p className="text-xs opacity-90">Active Volunteers</p>
             </div>
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4">
-                <Activity className="h-8 w-8 text-white" />
+              <div className="inline-flex items-center justify-center w-12 h-12 bg-white/20 rounded-full mb-3">
+                <Activity className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-2">1000+</h3>
-              <p className="text-sm opacity-90">Trees Planted</p>
+              <h3 className="text-xl font-bold mb-1">1000+</h3>
+              <p className="text-xs opacity-90">Trees Planted</p>
             </div>
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4">
-                <Award className="h-8 w-8 text-white" />
+              <div className="inline-flex items-center justify-center w-12 h-12 bg-white/20 rounded-full mb-3">
+                <Award className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-2">50+</h3>
-              <p className="text-sm opacity-90">Health Camps</p>
+              <h3 className="text-xl font-bold mb-1">50+</h3>
+              <p className="text-xs opacity-90">Health Camps</p>
             </div>
           </div>
         </div>

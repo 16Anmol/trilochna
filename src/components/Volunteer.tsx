@@ -49,39 +49,39 @@ const Volunteer = () => {
   ];
 
   return (
-    <section id="volunteer" className="py-20 bg-nature-light/20">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+    <section id="volunteer" className="py-12 bg-nature-light/20">
+      <div className="container mx-auto px-3 sm:px-4 lg:px-6">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Volunteer With Us
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Join a community of passionate changemakers and be part of something bigger than yourself. 
             Your time, energy, and enthusiasm can create ripples of positive change.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 mb-16">
+        <div className="grid lg:grid-cols-2 gap-8 mb-10">
           {/* Why Join Section */}
-          <div className="space-y-8">
+          <div className="space-y-6">
             <div>
-              <h3 className="text-3xl font-bold text-foreground mb-6">Why Join Trilochna?</h3>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+              <h3 className="text-2xl font-bold text-foreground mb-4">Why Join Trilochna?</h3>
+              <p className="text-base text-muted-foreground leading-relaxed mb-6">
                 As a student or young professional, volunteering with Trilochna offers you the perfect 
                 opportunity to make a real impact while growing personally and professionally. We believe 
                 in nurturing our volunteers and providing them with meaningful experiences that last a lifetime.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {benefits.map((benefit, index) => (
                 <Card key={index} className="shadow-card hover:shadow-glow transition-smooth">
-                  <CardContent className="p-6 text-center">
-                    <div className="w-12 h-12 bg-gradient-nature rounded-full flex items-center justify-center mx-auto mb-4">
-                      <benefit.icon className="h-6 w-6 text-white" />
+                  <CardContent className="p-4 text-center">
+                    <div className="w-10 h-10 bg-gradient-nature rounded-full flex items-center justify-center mx-auto mb-3">
+                      <benefit.icon className="h-5 w-5 text-white" />
                     </div>
-                    <h4 className="text-lg font-semibold mb-2">{benefit.title}</h4>
-                    <p className="text-sm text-muted-foreground">{benefit.description}</p>
+                    <h4 className="text-base font-semibold mb-2">{benefit.title}</h4>
+                    <p className="text-xs text-muted-foreground">{benefit.description}</p>
                   </CardContent>
                 </Card>
               ))}

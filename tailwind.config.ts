@@ -12,9 +12,13 @@ export default {
 	theme: {
 		container: {
 			center: true,
-			padding: '2rem',
+			padding: '1rem',
 			screens: {
-				'2xl': '1400px'
+				'sm': '640px',
+				'md': '768px',
+				'lg': '1024px',
+				'xl': '1200px',
+				'2xl': '1300px'
 			}
 		},
 		extend: {
@@ -83,6 +87,15 @@ export default {
 				'soft': 'var(--shadow-soft)',
 				'card': 'var(--shadow-card)',
 				'glow': 'var(--shadow-glow)'
+			},
+			spacing: {
+				'xs': 'var(--spacing-xs)',
+				'sm': 'var(--spacing-sm)', 
+				'md': 'var(--spacing-md)',
+				'lg': 'var(--spacing-lg)',
+				'xl': 'var(--spacing-xl)',
+				'2xl': 'var(--spacing-2xl)',
+				'3xl': 'var(--spacing-3xl)'
 			},
 			transitionTimingFunction: {
 				'smooth': 'var(--transition-smooth)',

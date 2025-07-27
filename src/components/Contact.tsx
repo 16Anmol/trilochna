@@ -51,50 +51,50 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-nature-light/20 relative overflow-hidden">
+    <section id="contact" className="py-12 bg-nature-light/20 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-10 left-10 w-20 h-20 bg-nature rounded-full"></div>
-        <div className="absolute top-40 right-20 w-16 h-16 bg-sky rounded-full"></div>
-        <div className="absolute bottom-20 left-20 w-12 h-12 bg-health rounded-full"></div>
-        <div className="absolute bottom-40 right-10 w-24 h-24 bg-nature-light rounded-full"></div>
+        <div className="absolute top-8 left-8 w-16 h-16 bg-nature rounded-full"></div>
+        <div className="absolute top-32 right-16 w-12 h-12 bg-sky rounded-full"></div>
+        <div className="absolute bottom-16 left-16 w-10 h-10 bg-health rounded-full"></div>
+        <div className="absolute bottom-32 right-8 w-18 h-18 bg-nature-light rounded-full"></div>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+      <div className="container mx-auto px-3 sm:px-4 lg:px-6 relative z-10">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Contact Us
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Have questions about volunteering or want to collaborate? We'd love to hear from you. 
             Get in touch and let's work together for a better tomorrow.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 mb-16">
+        <div className="grid lg:grid-cols-2 gap-8 mb-10">
           {/* Contact Information */}
-          <div className="space-y-8">
+          <div className="space-y-6">
             <div>
-              <h3 className="text-3xl font-bold text-foreground mb-6">Get in Touch</h3>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+              <h3 className="text-2xl font-bold text-foreground mb-4">Get in Touch</h3>
+              <p className="text-base text-muted-foreground leading-relaxed mb-6">
                 Whether you're a student looking to volunteer, an organization interested in partnership, 
                 or someone who needs our services, we're here to help. Reach out to us through any of 
                 the following channels.
               </p>
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-4">
               {contactInfo.map((info, index) => (
                 <Card key={index} className="shadow-card hover:shadow-glow transition-smooth">
-                  <CardContent className="p-6">
-                    <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-gradient-nature rounded-full flex items-center justify-center flex-shrink-0">
-                        <info.icon className="h-6 w-6 text-white" />
+                  <CardContent className="p-4">
+                    <div className="flex items-start gap-3">
+                      <div className="w-10 h-10 bg-gradient-nature rounded-full flex items-center justify-center flex-shrink-0">
+                        <info.icon className="h-5 w-5 text-white" />
                       </div>
                       <div className="flex-1">
-                        <h4 className="text-lg font-semibold mb-1">{info.title}</h4>
-                        <p className="text-nature font-medium mb-2">{info.details}</p>
-                        <p className="text-sm text-muted-foreground">{info.description}</p>
+                        <h4 className="text-base font-semibold mb-1">{info.title}</h4>
+                        <p className="text-nature font-medium mb-1">{info.details}</p>
+                        <p className="text-xs text-muted-foreground">{info.description}</p>
                       </div>
                     </div>
                   </CardContent>
