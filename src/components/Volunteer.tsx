@@ -145,6 +145,17 @@ const Volunteer = () => {
                     required
                   />
                 </div>
+                <div className="space-y-2">
+                  <Label htmlFor="phone">Alternate Phone Number *</Label>
+                  <Input
+                    id="phone"
+                    type="tel"
+                    placeholder="Enter your alternatephone number"
+                    value={formData.phone}
+                    onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                    required
+                  />
+                </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="interest">Area of Interest *</Label>

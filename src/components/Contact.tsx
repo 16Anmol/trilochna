@@ -158,9 +158,19 @@ const Contact = () => {
                     required
                     className="transition-smooth focus:scale-105"
                   />
+                </div> <div className="space-y-2">
+                  <Label htmlFor="contact-email">Mobile number *</Label>
+                  <Input
+                    id="Phone"
+                    type="Mobile number"
+                    placeholder="Enter your Mobile Number"
+                    value={formData.email}
+                    onChange={(e) => setFormData({...formData, email: e.target.value})}
+                    required
+                    className="transition-smooth focus:scale-105"
+                  />
                 </div>
-
-                <div className="space-y-2">
+                <div className="space-y-4">
                   <Label htmlFor="contact-message">Your Message *</Label>
                   <Textarea
                     id="contact-message"
@@ -168,7 +178,7 @@ const Contact = () => {
                     value={formData.message}
                     onChange={(e) => setFormData({...formData, message: e.target.value})}
                     required
-                    rows={5}
+                    rows={7}
                     className="transition-smooth focus:scale-105 resize-none"
                   />
                 </div>
