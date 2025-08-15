@@ -28,8 +28,8 @@ const Volunteer = () => {
   const benefits = [
     {
       icon: Award,
-      title: "Official Certificate",
-      description: "Receive an official Trilochna Volunteer Certificate recognizing your contribution to society."
+      title: "Recognition",
+      description: "Get recognized for your valuable contribution to society and community development."
     },
     {
       icon: Star,
@@ -65,9 +65,9 @@ const Volunteer = () => {
           {/* Why Join Section */}
           <div className="space-y-6">
             <div>
-              <h3 className="text-2xl font-bold text-foreground mb-4">Why Join Trilochna?</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-4">Why Join NAMISHARANYA?</h3>
               <p className="text-base text-muted-foreground leading-relaxed mb-6">
-                As a student or young professional, volunteering with Trilochna offers you the perfect 
+                As a student or young professional, volunteering with NAMISHARANYA offers you the perfect 
                 opportunity to make a real impact while growing personally and professionally. We believe 
                 in nurturing our volunteers and providing them with meaningful experiences that last a lifetime.
               </p>
@@ -88,15 +88,11 @@ const Volunteer = () => {
             </div>
 
             <div className="bg-gradient-nature rounded-2xl p-6 text-white">
-              <h4 className="text-xl font-bold mb-3">Get Your Official Certificate!</h4>
+              <h4 className="text-xl font-bold mb-3">Make a Real Impact!</h4>
               <p className="mb-4 opacity-90">
-                Every volunteer receives an official Trilochna Volunteer Certificate upon completion 
-                of their service commitment. This certificate is recognized and can enhance your 
-                resume and college applications.
+                Every volunteer makes a meaningful difference in their community. Join us in creating 
+                positive change through tree plantation, youth empowerment, and women empowerment initiatives.
               </p>
-              <Button variant="outline" className="bg-white/20 border-white/30 text-white hover:bg-white/30">
-                View Sample Certificate
-              </Button>
             </div>
           </div>
 
@@ -145,17 +141,6 @@ const Volunteer = () => {
                     required
                   />
                 </div>
-                <div className="space-y-2">
-                  <Label htmlFor="phone">Alternate Phone Number *</Label>
-                  <Input
-                    id="phone"
-                    type="tel"
-                    placeholder="Enter your alternatephone number"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                    required
-                  />
-                </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="interest">Area of Interest *</Label>
@@ -165,7 +150,8 @@ const Volunteer = () => {
                     </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="tree-plantation">Tree Plantation</SelectItem>
-                      <SelectItem value="health-camps">Health Camps</SelectItem>
+                      <SelectItem value="youth-empowerment">Youth Empowerment</SelectItem>
+                      <SelectItem value="women-empowerment">Women Empowerment</SelectItem>
                       <SelectItem value="event-management">Event Management</SelectItem>
                       <SelectItem value="social-media">Social Media & Marketing</SelectItem>
                       <SelectItem value="all">All Activities</SelectItem>

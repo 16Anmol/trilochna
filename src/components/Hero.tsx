@@ -19,58 +19,35 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-3 sm:px-4 lg:px-6 text-center text-white">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
-            Trilochna
+            NAMISHARANYA
           </h1>
           <p className="text-lg md:text-xl mb-3 font-medium">
-            A Community for Green & Healthy Living
+            A Community for Green & Sustainable Living
           </p>
           <p className="text-base md:text-lg mb-6 opacity-90 max-w-xl mx-auto">
-            Planting Trees. Saving Lives. Empowering Youth.
+            Planting Trees. Empowering Youth. Empowering Women.
           </p>
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 justify-center mb-8">
-            <Button variant="nature" className="text-base px-6 py-3">
+            <Button variant="nature" className="text-base px-6 py-3" onClick={() => window.open('/get-involved', '_blank')}>
               Join as Volunteer
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            <Button variant="sky" className="text-base px-6 py-3">
+            <Button variant="sky" className="text-base px-6 py-3" onClick={() => window.open('/coming-soon', '_blank')}>
               Upcoming Events
             </Button>
+            
             <Button variant="outline" className="text-base px-6 py-3 bg-white/10 border-white/30 text-white hover:bg-white/20">
               See Our Impact
             </Button>
           </div>
 
-          {/* Stats */}
-         <div className="flex flex-wrap justify-center gap-6 max-w-2xl mx-auto">
-
-            <div className="text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-white/20 rounded-full mb-3">
-                <Users className="h-6 w-6 text-white" />
-              </div>
-              <h3 className="text-xl font-bold mb-1">500+</h3>
-              <p className="text-xs opacity-90">Active Volunteers</p>
-            </div>
-            <div className="text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-white/20 rounded-full mb-3">
-                <Activity className="h-6 w-6 text-white" />
-              </div>
-              <h3 className="text-xl font-bold mb-1">1000+</h3>
-              <p className="text-xs opacity-90">Trees Planted</p>
-            </div>
-            <div className="text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-white/20 rounded-full mb-3">
-                <Award className="h-6 w-6 text-white" />
-              </div>
-              <h3 className="text-xl font-bold mb-1">50+</h3>
-              <p className="text-xs opacity-90">Health Camps</p>
-            </div>
-          </div>
         </div>
       </div>
 
-   
+      {/* Scroll Indicator */}
+     
     </section>
   );
 };

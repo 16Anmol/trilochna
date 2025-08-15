@@ -68,8 +68,8 @@ const Events = () => {
   ];
 
   return (
-    <section id="events" className="py-20 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+   <section id="events" className="py-20 bg-background">
+   {/*    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Events
@@ -78,15 +78,15 @@ const Events = () => {
             Join our upcoming activities and be part of positive change. Together, we create 
             lasting impact in our communities through meaningful action.
           </p>
-        </div>
+        </div> */}
 
         {/* Upcoming Events */}
-        <div className="mb-16">
+     {/*   <div className="mb-16">
           <div className="flex items-center justify-between mb-8">
             <h3 className="text-3xl font-bold text-foreground">Upcoming Events</h3>
-            <Button variant="outline">
+            <Button variant="outline" onClick={() => window.open('/coming-soon', '_blank')}>
               <Calendar className="mr-2 h-4 w-4" />
-              View Calendar
+              View Upcoming Events
             </Button>
           </div>
 
@@ -148,10 +148,10 @@ const Events = () => {
               </Card>
             ))}
           </div>
-        </div>
+        </div>  */}
 
         {/* Past Events */}
-        <div className="mb-12">
+    {/*    <div className="mb-12">
           <h3 className="text-3xl font-bold text-foreground mb-8">Past Events & Impact</h3>
           
           <div className="grid md:grid-cols-3 gap-6">
@@ -183,10 +183,11 @@ const Events = () => {
               </Card>
             ))}
           </div>
-        </div>
+        </div> */}
+        
 
         {/* Call to Action */}
-        <div className="text-center bg-gradient-nature rounded-2xl p-8 text-white">
+     {/*   <div className="text-center bg-gradient-nature rounded-2xl p-8 text-white">
           <h3 className="text-2xl font-bold mb-4">
             Don't Miss Our Next Event!
           </h3>
@@ -202,8 +203,8 @@ const Events = () => {
               Join WhatsApp Group
             </Button>
           </div>
-        </div>
-      </div>
+        </div>*/}
+    
     </section>
   );
 };

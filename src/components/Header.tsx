@@ -20,7 +20,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex-shrink-0">
             <h1 className="text-xl font-bold bg-gradient-nature bg-clip-text text-transparent">
-              Trilochna
+              NAMISHARANYA
             </h1>
             <p className="text-xs text-muted-foreground -mt-1">
               Green & Healthy Living

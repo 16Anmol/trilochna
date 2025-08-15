@@ -8,7 +8,7 @@ const Activities = () => {
   const activities = [
     {
       title: "Tree Plantation",
-      description: "Join our mission to create a greener planet. We organize regular tree plantation drives across communities, helping combat climate change while creating beautiful green spaces for everyone to enjoy.",
+      description: "We will organize regular tree plantation drives across communities, helping combat climate change while creating beautiful green spaces for everyone to enjoy.",
       benefits: [
         "Combat air pollution",
         "Create oxygen-rich environments", 
@@ -21,28 +21,28 @@ const Activities = () => {
       bgGradient: "bg-gradient-nature"
     },
     {
-      title: "Free Eye Check-up Camps",
-      description: "Vision is precious, and we believe everyone deserves clear sight. Our certified ophthalmologists provide comprehensive eye examinations, early detection of eye diseases, and prescription guidance completely free of cost.",
+      title: "Youth Empowerment",
+      description: "Empowering young minds through skill development workshops, leadership training, and educational programs designed to build confidence and create future leaders.",
       benefits: [
-        "Comprehensive eye examinations",
-        "Early disease detection",
-        "Prescription recommendations",
-        "Vision screening for children",
-        "Awareness about eye care"
+        "Leadership skill development",
+        "Personal growth workshops",
+        "Career guidance sessions",
+        "Confidence building activities",
+        "Peer networking opportunities"
       ],
       icon: eyeIcon,
       color: "sky",
       bgGradient: "bg-gradient-sky"
     },
     {
-      title: "Free Blood Tests",
-      description: "Regular health monitoring shouldn't be a luxury. Our health camps offer essential blood tests including blood sugar, cholesterol, and hemoglobin levels to help community members stay informed about their health status.",
+      title: "Women Empowerment",
+      description: "Supporting women through skill development programs, awareness campaigns, and community support systems to foster independence and leadership in society.",
       benefits: [
-        "Basic health parameter checks",
-        "Early health issue detection",
-        "Diabetes screening",
-        "Cholesterol level monitoring",
-        "Health awareness education"
+        "Skill development training",
+        "Financial literacy programs",
+        "Health awareness campaigns",
+        "Leadership development",
+        "Community support networks"
       ],
       icon: bloodIcon,
       color: "health",
@@ -58,8 +58,8 @@ const Activities = () => {
             Our Activities
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Three pillars of impact: environmental conservation, healthcare accessibility, 
-            and community empowerment working together for a better tomorrow.
+            Three pillars of impact: environmental conservation, youth empowerment, 
+            and women empowerment working together for a sustainable future.
           </p>
         </div>
 
@@ -95,12 +95,12 @@ const Activities = () => {
                   </ul>
                 </div>
 
-                <Button 
+             {/*   <Button 
                   variant={activity.color as any} 
                   className="w-full"
                 >
                   Learn More
-                </Button>
+                </Button> */}
               </CardContent>
             </Card>
           ))}
@@ -115,7 +115,7 @@ const Activities = () => {
             Join us in our upcoming events and be part of something meaningful.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="nature" size="lg">
+            <Button variant="nature" size="lg" onClick={() => window.open('/coming-soon', '_blank')}>
               View Upcoming Events
             </Button>
             <Button variant="outline" size="lg">
