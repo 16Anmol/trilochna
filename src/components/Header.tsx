@@ -9,8 +9,8 @@ const Header = () => {
 
   const navItems = [
     { name: "Home", href: "/" },
-    { name: "Our Work", href: "/our-work" },
-    { name: "Get Involved", href: "/get-involved" }
+    { name: "Our Work", href: "/ourwork" },
+    { name: "Get Involved", href: "/getinvolved" }
   ];
 
   return (
@@ -48,7 +48,7 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Link to="/get-involved">
+            <Link to="/getinvolved">
               <Button variant="nature" size="sm">
                 Join as Volunteer
               </Button>
@@ -86,7 +86,7 @@ const Header = () => {
                 </Link>
               ))}
               <div className="pt-2">
-                <Link to="/get-involved">
+                <Link to="/getinvolved">
                   <Button variant="nature" size="sm" className="w-full">
                     Join as Volunteer
                   </Button>

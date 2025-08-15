@@ -12,6 +12,7 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     message: ""
   });
 
@@ -21,7 +22,7 @@ const Contact = () => {
       title: "Message Sent!",
       description: "Thank you for reaching out. We'll get back to you soon.",
     });
-    setFormData({ name: "", email: "", message: "" });
+    setFormData({ name: "", email: "",phone: "", message: "" });
   };
 
   const contactInfo = [
@@ -159,17 +160,17 @@ const Contact = () => {
                     className="transition-smooth focus:scale-105"
                   />
                 </div> <div className="space-y-2">
-                  <Label htmlFor="contact-email">Mobile number *</Label>
-                  <Input
-                    id="Phone"
-                    type="Mobile number"
-                    placeholder="Enter your Mobile Number"
-                    value={formData.email}
-                    onChange={(e) => setFormData({...formData, email: e.target.value})}
-                    required
-                    className="transition-smooth focus:scale-105"
-                  />
-                </div>
+  <Label htmlFor="phone">Mobile number *</Label>
+  <Input
+    id="phone"
+    type="tel"
+    placeholder="Enter your Mobile Number"
+    value={formData.phone || ""}
+    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+  
+    className="transition-smooth focus:scale-105"
+  />
+</div>
                 <div className="space-y-4">
                   <Label htmlFor="contact-message">Your Message *</Label>
                   <Textarea

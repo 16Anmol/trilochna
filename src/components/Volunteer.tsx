@@ -138,7 +138,7 @@ const Volunteer = () => {
                     placeholder="Enter your phone number"
                     value={formData.phone}
                     onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                    required
+           
                   />
                 </div>
 

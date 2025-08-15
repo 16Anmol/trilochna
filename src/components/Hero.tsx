@@ -30,11 +30,11 @@ const Hero = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 justify-center mb-8">
-            <Button variant="nature" className="text-base px-6 py-3" onClick={() => window.open('/get-involved', '_blank')}>
+            <Button variant="nature" className="text-base px-6 py-3" onClick={() => window.open('/getinvolved', '_blank')}>
               Join as Volunteer
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            <Button variant="sky" className="text-base px-6 py-3" onClick={() => window.open('/coming-soon', '_blank')}>
+            <Button variant="sky" className="text-base px-6 py-3" onClick={() => window.open('/comingsoon', '_blank')}>
               Upcoming Events
             </Button>
             
