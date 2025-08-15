@@ -2,8 +2,11 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, MapPin, Clock, Users, ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Events = () => {
+  const navigate = useNavigate();
+
   const upcomingEvents = [
     {
       id: 1,
@@ -84,7 +87,7 @@ const Events = () => {
      {/*   <div className="mb-16">
           <div className="flex items-center justify-between mb-8">
             <h3 className="text-3xl font-bold text-foreground">Upcoming Events</h3>
-            <Button variant="outline" onClick={() => window.open('/coming-soon', '_blank')}>
+            <Button variant="outline" onClick={() => navigate('/comingsoon')}>
               <Calendar className="mr-2 h-4 w-4" />
               View Upcoming Events
             </Button>

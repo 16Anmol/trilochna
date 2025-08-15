@@ -1,10 +1,13 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 import treeIcon from "@/assets/tree-icon.jpg";
 import eyeIcon from "@/assets/eye-icon.jpg";
 import bloodIcon from "@/assets/blood-icon.jpg";
 
 const Activities = () => {
+  const navigate = useNavigate();
+
   const activities = [
     {
       title: "Tree Plantation",
@@ -115,10 +118,10 @@ const Activities = () => {
             Join us in our upcoming events and be part of something meaningful.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="nature" size="lg" onClick={() => window.open('/coming-soon', '_blank')}>
+            <Button variant="nature" size="lg" onClick={() => navigate('/comingsoon')}>
               View Upcoming Events
             </Button>
-            <Button variant="outline" size="lg">
+            <Button variant="outline" size="lg" onClick={() => navigate('/getinvolved')}>
               Volunteer Today
             </Button>
           </div>

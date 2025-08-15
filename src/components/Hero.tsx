@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Users, Activity, Award } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import heroImage from "@/assets/hero-image.jpg";
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -30,11 +33,11 @@ const Hero = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 justify-center mb-8">
-            <Button variant="nature" className="text-base px-6 py-3" onClick={() => window.open('/getinvolved', '_blank')}>
+            <Button variant="nature" className="text-base px-6 py-3" onClick={() => navigate('/getinvolved')}>
               Join as Volunteer
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            <Button variant="sky" className="text-base px-6 py-3" onClick={() => window.open('/comingsoon', '_blank')}>
+            <Button variant="sky" className="text-base px-6 py-3" onClick={() => navigate('/comingsoon')}>
               Upcoming Events
             </Button>
             
